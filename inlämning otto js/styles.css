@@ -1,0 +1,330 @@
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+nav{
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(32, 2, 141) , rgb(2, 0, 27)) ;
+    flex-direction: row;
+    transition: all .3s ease;
+    z-index : 2;
+}
+
+nav.show {
+    transform: translateX(0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content {
+    margin: 0;
+    display: flex;
+    display: grid;
+    grid-template-columns: 25rem 25rem;
+    grid-template-rows: 100px 60px auto 30px 60px 50px 50px 80px 30px 70px;
+    justify-content: center;
+    align-content: center;
+    z-index : 2;
+}
+
+.sol2 {
+    background-color: #FFD029;
+    display: flex;
+    position: absolute;
+    height: 80rem;
+    width: 80rem;
+    padding: 5%;
+    border-radius: 0% 100% 100% 0%;
+    transform: translateX(-93%);
+    z-index : 2;
+}
+
+.planetName {
+    font-family: 'Secular One', sans-serif;
+    grid-column: 1;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0.2rem;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.planetLatin {
+    font-family: 'Lora', serif;
+    grid-column: 1;
+    line-height: 24px;
+    color: #FFD029;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.line2 {
+    margin: 0;
+    grid-column: 1 / span 2;
+    grid-row: 9;
+    border-bottom: 2px solid white ;
+    opacity: 0.3;
+}
+
+#planetsInfo {
+    grid-column: 1 / span 2;
+    letter-spacing: 0.1rem;
+    width: 50rem;
+    font-size: 18px;
+    padding-bottom: 2.5rem;
+    line-height: 30px;
+}
+
+.line1 {
+    margin: 0;
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    border-bottom: 2px solid white ;
+    opacity: 0.3;
+}
+
+p#planetOmkrets {
+    font-family: 'Roboto Condensed', sans-serif;
+    grid-column: 1;
+    grid-row: 5/10;
+}
+
+.Omkrets {
+    font-family: 'Lora', serif;
+    grid-column: 1;
+    grid-row: 6/10;
+}
+
+.MaxTempRubirk {
+    font-family: 'Roboto Condensed', sans-serif;
+    grid-column: 1;
+    grid-row: 7/10;
+}
+
+
+.Maxtemperatur {
+    font-family: 'Lora', serif;
+    grid-column: 1;
+    grid-row: 8/10;
+}
+
+.KilometerRubrik {
+    font-family: 'Roboto Condensed', sans-serif;
+    grid-column: 2/3;
+    grid-row: 5/8;
+}
+
+.Kilometers {
+    font-family: 'Lora', serif;
+    grid-column: 2/3;
+    grid-row: 6/8;
+}
+
+.MinTempRubrik{
+    font-family: 'Roboto Condensed', sans-serif;
+    grid-column: 2/3;
+    grid-row: 7/7;
+}
+
+.Mintemperatur {
+    font-family: 'Lora', serif;
+    grid-column: 2/3;
+    grid-row: 8/8;
+}
+
+.MoonsRubrik {
+    font-family: 'Roboto Condensed', sans-serif;
+    grid-column: 1/3;
+    grid-row: 10;
+}
+
+.moons {
+    font-family: 'Lora', serif;
+    grid-column: 1/3;
+    grid-row: 11;
+}
+
+.back {
+    font-family: 'Lora', serif;
+    grid-column: 2/3;
+    grid-row: 11;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #093156;
+    color: white;
+    
+}
+
+.moons {
+    grid-row: 11;
+    font-size: 10px;
+    width: 100%;
+}
+
+.info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #888888;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    transform: scaleY(0);
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  .info.show {
+    transform: translateX(0);
+    background-image: url("/bakgrundslide.png");
+  }
+
+section {
+    color: white;
+}
+
+.header {
+    color: white;
+    display: flex;
+    position: relative;
+    top: -26rem;
+    right: -38rem;
+    font-family: 'Secular One', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.09em;
+    font-style: normal;
+}
+
+.solaris {
+    color: #FFD029;
+    display: flex;
+    position: relative;
+    top: -22rem;
+    right: -25.5rem;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0.6em;
+}
+
+.sol {
+    background-color: #FFD029;
+    display: flex;
+    position: absolute;
+    height: 80rem;
+    width: 80rem;
+    padding: 5%;
+    border-radius: 0% 100% 100% 0%;
+    transform: translateX(-93%);
+    z-index : 2;
+}
+
+.ellipse1{
+    background-color: #888888;
+    display: flex;
+    border-radius: 50%;
+    position: relative;
+    height: 1rem;
+    width: 1rem;
+    right: -13rem;
+
+}
+
+.ellipse2 {
+    background-color: #E7CDCD;
+    display: flex;
+    border-radius: 60%;
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    right: -20rem;
+}
+
+.ellipse3 {
+    background-color: #428ED4;
+    display: flex;
+    border-radius: 60%;
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    right: -26rem;
+}
+
+.ellipse4 {
+    background-color: #EF5F5F;
+    display: flex;
+    border-radius: 60%;
+    position: relative;
+    height: 1rem;
+    width: 1rem;
+    right: -32rem;
+}
+
+.ellipse5 {
+    background-color: #E29468;
+    display: flex;
+    border-radius: 60%;
+    position: relative;
+    height: 11rem;
+    width: 11rem;
+    right: -40.5rem;
+}
+
+.ellipse6 {
+    background-color: #C7AA72;
+    display: flex;
+    border-radius: 60%;
+    position: relative;
+    height: 8.4rem;
+    width: 8.4rem;
+    right: -50rem;
+    
+}
+.ellipse7 {
+    background-color: #FFFFFF66;
+    display: flex;
+    position: relative;
+    border-radius: 700% 100% 700% 100%;
+    height: 14rem;
+    width: 0.3rem;
+    transform: rotate(60deg);
+    right: -36rem;
+}
+
+
+.ellipse8 {
+    background-color: #C9D4F1;
+    display: flex;
+    border-radius: 60%;
+    position: relative;
+    height: 4.5rem;
+    width: 4.5rem;
+    right: -60rem;
+}
+
+.ellipse9 {
+    background-color: #7A91A7;
+    display: flex;
+    border-radius: 60%;
+    position: relative;
+    height: 4.5rem;
+    width: 4.5rem;
+    right: -69rem;
+}
